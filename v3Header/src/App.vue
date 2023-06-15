@@ -1,8 +1,21 @@
-<template></template>
+<template lang="">
+  <div>
+    <Header> </Header>
+  </div>
+</template>
 
-<script setup>
+<script>
+import Header from './components/AppHeader.vue';
 
-
+export default {
+  components: {
+    Header,
+  }
+}
 </script>
 
-<style></style>
+<style lang="">
+  @import './styles/generals.scss';
+</style>
+
+
