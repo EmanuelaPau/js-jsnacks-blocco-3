@@ -6,10 +6,12 @@
 
 <script>
 import Header from './components/AppHeader.vue';
+// import AppHeaderLink from './components/AppHeaderLink.vue'
 
 export default {
   components: {
     Header,
+    AppHeaderLink,
   }
 }
 </script>
