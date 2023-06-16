@@ -1,6 +1,10 @@
 <template lang="">
     <div>
-        <AppHeaderLink/>
+        <ul>
+            <AppHeaderLink v-for="liElement in liList"
+            :navname = liElement.name
+            :link = liElement.link />
+        </ul>
     </div>
 </template>
 <!-- <script> -->
@@ -17,10 +21,26 @@ export default {
     data() {
         return {
             nav: [
-                'gino',
-                'ciao',
-                'boh',
-                'bu',
+                {
+                    name: 'gino',
+                    link: '#'
+                },
+                {
+                    name: 'ciao',
+                    link: '#'
+                },
+                {
+                    name: 'boh',
+                    link: '#'
+                },
+                {
+                    name: 'bla',
+                    link: '#'
+                },
+                {
+                    name: 'buh',
+                    link: '#'
+                },
             ]
         }
     },
