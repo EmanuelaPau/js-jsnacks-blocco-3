@@ -1,12 +1,12 @@
 <template lang="">
   <div>
-    <Header> </Header>
+    <Header></Header>
   </div>
 </template>
 
 <script>
 import Header from './components/AppHeader.vue';
-// import AppHeaderLink from './components/AppHeaderLink.vue'
+import AppHeaderLink from './components/AppHeaderLink.vue'
 
 export default {
   components: {
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style lang="">
-  @import './styles/generals.scss';
+  /* @import './styles/generals.scss'; */
 </style>
 
 

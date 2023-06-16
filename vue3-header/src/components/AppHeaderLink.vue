@@ -1,16 +1,16 @@
 <template>
     <li>
-        <a :href="{{ link }}">{{ name }}</a>
+        <a :href="link"> {{ navname }} </a>
     </li>
 </template>
 
 <script>
 export default {
-    name: 'AppHeader',
+    name: 'AppHeadeLink',
     props: {
-        name: String,
+        navname: String,
         link: String,
-    }
+    },
     data() {
         return {
         }

@@ -1,9 +1,10 @@
 <template lang="">
     <div>
         <ul>
-            <AppHeaderLink v-for="liElement in liList"
+            <AppHeaderLink v-for="liElement in nav"
             :navname = liElement.name
-            :link = liElement.link />
+            :link = liElement.link 
+            />
         </ul>
     </div>
 </template>
@@ -49,4 +50,20 @@ export default {
 }		
 </script>
 
-<style lang="scss"></style> 
+<style lang="scss">
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 700px;
+    justify-content: space-between;
+
+    li {
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+</style> 
